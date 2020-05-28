@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="src/main.css">
+  </head>
+  <body>
+    <header>
+      <div>
+				<h1>Calculadora</h1>
+			</div>
+		</header>
+		<section>
+      <article>
+        <div>
+          <input type="text" class="numbar" id="mainbar"></input>
+        </div>
+        <div>
+          <input type="text" class="opbar" id="eqnbar"></input>
+        </div>	
+        <div>
+          <table>	
+            <tbody>
+              <tr>
+                <td><button class="calc mem" type="button" onclick="cleanDisplay()">AC</button></td>
+                <td><button class="calc mem" type="button" onclick="addMemory()">M+</button></td>
+                <td><button class="calc mem" type="button" onclick="recallMemory()">MR</button></td>
+                <td><button class="calc mem" type="button" onclick="cleanMemory()">MC</button></td>
+                <td><button class="calc mem" type="button" onclick="backspaces()" id="raiz">&larr;</button></td>
+              </tr>
+              <tr>
+                <td><button class="calc number" type="button" id="1">1</button></td>
+                <td><button class="calc number" type="button" id="2">2</button></td>
+                <td><button class="calc number" type="button" id="3">3</button></td>
+                <td><button class="calc oper" type="button" id="suma">+</button></td>
+                <td><button class="calc oper">(</button></td>
+              </tr>
+              <tr>
+                <td><button class="calc number" type="button" id="4">4</button></td>
+                <td><button class="calc number" type="button" id="5">5</button></td>
+                <td><button class="calc number" type="button" id="6">6</button></td>
+                <td><button class="calc oper" type="button" id="resta">-</button></td>
+                <td><button class="calc oper">)</button></td>
+              </tr>
+              <tr>
+                <td><button class="calc number" type="button" id="7">7</button></td>
+                <td><button class="calc number" type="button" id="8">8</button></td>
+                <td><button class="calc number" type="button" id="9">9</button></td>
+                <td><button class="calc oper" type="button" id="multip">&times;</button></td>
+                <td><button class="calc oper" type="button" onclick="squareRoot()">&radic;</button></td>
+              </tr>
+              <tr>
+                <td><button class="calc oper">%</button></td>
+                <td><button class="calc number" type="button" id="0">0</button></td>
+                <td><button class="calc oper" type="button" onclick="comma()">.</button></td>
+                <td><button class="calc oper" type="button" id="divis">&divide;</button></td>
+                <td><button class="calc oper" type="button" id="igual">=</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+			</article>
+		</section>
+		<script src="src/ops.js"></script>
+	</body>
+</html>
