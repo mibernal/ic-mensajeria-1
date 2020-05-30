@@ -292,6 +292,22 @@ function errorMgt(){
 	ecuacion="";
 	pantalla='0';
 	decPt=false;
+	
+}
+
+function lon(){
+  arith=true;
+  num1=Number(pantalla);
+  if(num1<=0){
+    pantalla="Error";
+    ecuacion=pantalla;
+  }
+  else{
+    num2=Math.log(num1);
+    pantalla=num2;
+    ecuacion='ln '+num1;
+  }
+  updateDisp();
 }
 
 function updateDisp(){
@@ -300,9 +316,3 @@ function updateDisp(){
 }
 
 
-
-
-
-function alertas(){
-	alert("Desarrollada por John Richard Velásquez Prieto. Cod 1310012706. PSP. Junio de 2019");
-}
