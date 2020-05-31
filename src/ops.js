@@ -295,6 +295,7 @@ function errorMgt(){
 	
 }
 
+
 function sen(){
   arith=true;
   num1=Number(pantalla);
@@ -302,7 +303,16 @@ function sen(){
     num2=Math.sin(rad);
     pantalla=num2;
     ecuacion='sen '+num1;
-  
+   updateDisp();
+} 
+
+function cos(){
+  arith=true;
+  num1=Number(pantalla);
+  rad = (Math.PI/180)*num1;
+    num2=Math.cos(rad);
+    pantalla=num2;
+    ecuacion='cos '+num1;
   updateDisp();
 }
 
@@ -324,6 +334,21 @@ function lon(){
 function updateDisp(){
 	document.getElementById("mainbar").value=pantalla;
 	document.getElementById("eqnbar").value=ecuacion;
+}
+
+function calcE(){
+  arith=true;
+  num1=Number(pantalla);
+  if(num1<=0){
+    pantalla="Error";
+    ecuacion=pantalla;
+  }
+  else{
+    num2=Math.exp(num1)
+    pantalla=num2;
+    ecuacion='e^ '+num1;
+  }
+  updateDisp();
 }
 
 
