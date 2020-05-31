@@ -295,6 +295,17 @@ function errorMgt(){
 	
 }
 
+
+function sen(){
+  arith=true;
+  num1=Number(pantalla);
+  rad = (Math.PI/180)*num1;
+    num2=Math.sin(rad);
+    pantalla=num2;
+    ecuacion='sen '+num1;
+   updateDisp();
+} 
+
 function cos(){
   arith=true;
   num1=Number(pantalla);
