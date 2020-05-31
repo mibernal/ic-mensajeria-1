@@ -295,6 +295,16 @@ function errorMgt(){
 	
 }
 
+function cos(){
+  arith=true;
+  num1=Number(pantalla);
+  rad = (Math.PI/180)*num1;
+    num2=Math.cos(rad);
+    pantalla=num2;
+    ecuacion='cos '+num1;
+  updateDisp();
+}
+
 function lon(){
   arith=true;
   num1=Number(pantalla);
