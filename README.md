@@ -14,3 +14,4 @@ Integrantes
 ## *Prueba*
 
 Esta es una prueba para verificar el reporte automático en Jenkins
+Prueba 2
