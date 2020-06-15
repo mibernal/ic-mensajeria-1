@@ -10,3 +10,7 @@ Integrantes
 - Se mueven los archivos de la primera integración (Calculadora) al branch OldCalc
 - Se crean 4 branches respectivos para la integración de cada microservicio (msgBase, msgGUI, msgLogin, msgChat)
 - La publicación de los archivos .md de cada servicio se hará en Español
+
+## *Prueba*
+
+Esta es una prueba para verificar el reporte automático en Jenkins
