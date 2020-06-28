@@ -3,16 +3,15 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/styles'
 import { createMuiTheme } from '@material-ui/core/styles';
-
 import { blue, pink } from '@material-ui/core/colors';
-import Header from './Components/layout/Header';
-import User from './Components/User';
-import Routes from './Routes';
+import Header from './UI/layout/Header';
+import User from './login/User';
+import Routes from './UI/layout/Routes';
 import firebase from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
-import { loadUser } from './utils/dbUtils';
-import { firebaseConfig } from './config/firebaseConfig';
+import { loadUser } from '../src/database/dbUtils';
+import { firebaseConfig } from '../src/database/firebaseConfig';
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

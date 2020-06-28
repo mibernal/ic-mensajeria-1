@@ -13,9 +13,9 @@ import firebase from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
 import 'firebase/storage';
-import Alert from './Alert';
-import CustomAvatar from './CustomAvatar';
-import { loadUser } from '../utils/dbUtils';
+import Alert from '../UI/layout/Alert';
+import CustomAvatar from '../login/CustomAvatar';
+import { loadUser } from '../database/dbUtils';
 
 const MyLink = React.forwardRef((props, ref) => <RouterLink innerRef={ref} {...props} />);
 
@@ -199,7 +199,7 @@ const Profile = (props) => {
           </Button>
           <Grid container justify="flex-end">
             <Grid item>
-              <Link to="/" component={MyLink} variant="body2">
+              <Link to="/chat" component={MyLink} variant="body2">
                 {"Ir al Chat"}
               </Link>
             </Grid>
