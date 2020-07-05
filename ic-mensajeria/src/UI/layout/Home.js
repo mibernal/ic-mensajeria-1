@@ -53,6 +53,7 @@ const Home = () => {
             variant="contained"
             color="primary"
             className={classes.submit}
+            Link to="/login" component={MyLink}
           >
             Ingresar
           </Button>

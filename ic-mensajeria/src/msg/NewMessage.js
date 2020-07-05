@@ -82,6 +82,7 @@ const NewMessage = () => {
                 endIcon={<Icon>send</Icon>}
                 fullWidth
                 disabled={!message.length}
+                onClick={handleSubmit}
               >
                 Enviar
               </Button>
